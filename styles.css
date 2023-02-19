@@ -1,0 +1,284 @@
+.navbar-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-item {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.title-section {
+    background-image: url("images/desktop/image-hero.jpg");
+    padding: 2% 10%;
+}
+
+.title-text {
+    color: #fff;
+    border: 1px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    padding: 3%;
+    line-height: 1;
+}
+
+.title-text-row {
+    margin: 10% 0;
+}
+
+.title-text p {
+    margin: 0;
+}
+
+/* Features Section */
+
+#features {
+    text-align: center;
+}
+
+.feature-section, .creations-section {
+    padding: 2% 11%;
+}
+
+.feature-col {
+    padding: 0;
+}
+
+.feature-text {
+    background-color: #fff;
+    margin-top: 40%;
+    padding: 12% 0 12% 12%;
+}
+
+.feature-text-head {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1;
+    display: inline;
+}
+
+.feature-text-desc {
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* Creations Section  */
+
+.grid-container {
+    display: grid;
+}
+
+.btn-see-all {
+    font-family: 'Alata', sans-serif;
+    letter-spacing: 5px;
+    width: auto;
+    border-radius: 0;
+    padding: 6px 30px;
+}
+
+.creations-imgs {
+    padding: 5% 0;
+    filter: brightness(0.75);
+}
+
+.creations-col:hover {
+    color: #000;
+}
+.creations-col:hover .creations-imgs {
+    opacity: 0.5;
+} 
+
+.creations-col {
+    padding: 0;
+    position: relative;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    line-height: 1;
+    z-index: 1;
+}
+
+/* Footer Section  */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2% 10%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-brand {
+    font-family: 'Alata', sans-serif;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.footer-menu {
+    padding: 0;
+}
+
+.socials {
+    text-align: right;
+    padding: 0;
+}
+
+.social {
+    padding: 5px;
+    position: relative;
+}
+
+.copyright {
+    color: hsl(0, 0%, 55%);
+    text-align: right;
+    padding: 0;
+}
+
+/* For scren wider than 600px */
+
+@media (min-width: 601px) {
+    .nav-link:hover:after {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        height: 2px;
+        width: 40%;
+    }
+
+    .social:hover:after {
+        content: "";
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    height: 2px;
+    width: 80%;
+    cursor: pointer;
+    }
+   
+    .btn-see-all {
+        position: absolute;
+        right: 11%;
+    }
+}
+
+/* Mobile View Styles */
+
+@media (max-width: 600px) {
+
+    .title-section {
+        background-image: url("images/mobile/image-hero.jpg");
+        background-size: 100%;
+    }
+
+    .title-text {
+        font-size: 2.3rem;
+        margin: 50% 0;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .feature-text {
+        text-align: center;
+        margin-top: 15%;
+        padding: 0;
+    }
+
+    .feature-text-head {
+        font-size: 2rem;
+    }
+
+    .creations-section {
+        display: flex; 
+        flex-flow: column;
+    }
+
+    .feature-text-head {
+        order: 1;
+    }
+
+    .btn-see-all {
+        order: 3;
+        margin: auto;
+        width: auto;
+    }
+
+    .feature-section, .creations-section {
+        padding: 15% 11%;
+    }
+
+    .creations-imgs-section {
+        order: 2;
+    }
+
+    .footer {
+        padding: 10% 10%;
+    }
+
+    .footer-brand {
+        font-family: 'Alata', sans-serif;
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-menu {
+        text-align: center;
+        order: 1;
+    }
+
+    .container-fluid {
+        display: unset;
+    }
+    
+    .socials {
+        text-align: center;
+        order: 2;
+    }
+    
+    .copyright {
+        text-align: center;
+        order: 3;
+        padding-top: 7%;
+    }
+
+    .navbar-footer>.container-fluid {
+        display: unset;
+    }
+
+}
